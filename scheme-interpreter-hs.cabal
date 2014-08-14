@@ -15,7 +15,7 @@ build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
-executable scheme-interpreter-hs
+executable pdx-lisp
   
   main-is:             
     Main.hs

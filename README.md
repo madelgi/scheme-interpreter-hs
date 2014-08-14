@@ -18,15 +18,20 @@ cabal install -j
 After installation, run
 
 ```
-.cbal-sandbox/bin/scheme-interpreter-hs
+.cbal-sandbox/bin/pdx-lisp
 ```
 
-to open the interactive scheme interpreter. If you would like to load a Scheme
-library, type
+to open the interactive scheme interpreter. After running the interpreter,
+you should be met with a `Lisp>>>` prompt. If you would like to load a scheme
+file, use the `load` command. For example, to load the included standard library,
+enter
 
 ```
-.cbal-sandbox/bin/scheme-interpreter-hs <path-to-lib>
+Lisp>>> (load "libraries/base/stdlib.scm")
 ```
+
+After doing so, you will be able to use any of the functions included in stdlib.scm.
+To exit the interpreter, type `quit`.
 
 ## Bugs
 
@@ -34,8 +39,8 @@ library, type
 
 The following are some features I intend on implementing in the future:
 
-   * Add a basic standard library
-   * Add support for Vectors
+   * ~~add a basic standard library~~
+   * Add support for Vectors (In progress)
    * Add support for floating point arithmetic
    * Add support for complex arithmetic
 
